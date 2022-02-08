@@ -22,11 +22,9 @@ h1 {
 }
 
 .div {
-    display: inline-block;
-    width: 1280px;
+    display: block;
+    width: 100vw;
     height: 869px;
-    margin-left: 30px;
-    margin-right: 30px;
     background-image: 
 
     /* url('./image/1.png'),  */
@@ -43,6 +41,13 @@ h1 {
     /* url('./image/start.png') */
 
     ;
-    background-size: contain, contain, contain, contain, contain, contain, contain, contain, contain, contain, contain, contain, contain, contain, contain, contain;
+    background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1280px) {
+  .div {
+    display: inline-block;
+    width: 1280px;
+  }
 }
